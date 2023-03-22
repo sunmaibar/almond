@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-const GatsbyContext = React.createContext(null)
+const GatsbyContext = React.createContext()
 
 const GatsbtProvider = ({ children }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   return (
     <GatsbyContext.Provider value={{ isSidebarOpen, setIsSidebarOpen }}>
       {children}

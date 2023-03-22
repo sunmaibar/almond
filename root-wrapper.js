@@ -1,6 +1,8 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 
+import { GatsbtProvider } from './src/context/context'
+
 const GlobeStyle = createGlobalStyle`
 /*
 =============== 
@@ -178,7 +180,7 @@ export const wrapRootElement = ({ element }) => {
   return (
     <>
       <GlobeStyle />
-      {element}
+      <GatsbtProvider>{element}</GatsbtProvider>
     </>
   )
 }
