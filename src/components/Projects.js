@@ -1,10 +1,8 @@
 import React from 'react'
-import projectData from '../constants/productsData'
-import { Link } from 'gatsby'
+
 import Title from './Title'
 import styled from 'styled-components'
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'
-import SearchButtons from './SearchButtons'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Projects = () => {
   return (

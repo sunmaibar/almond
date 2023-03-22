@@ -26,6 +26,7 @@ const SEO = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      <link rel="icon" type="image/x-icon" href="../images/favicon.ico"></link>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <link
@@ -47,12 +48,6 @@ const SEO = ({ title, description, image, article }) => {
       {seo.image && <meta property="og:image" content={seo.image} />}
 
       <meta name="twitter:card" content="summary_large_image" />
-
-      {twitterUsername && (
-        <meta name="twitter:creator" content={twitterUsername} />
-      )}
-
-      {seo.title && <meta name="twitter:title" content={defaultTitle} />}
 
       {seo.description && (
         <meta name="twitter:description" content={seo.description} />
