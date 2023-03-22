@@ -26,14 +26,10 @@ const SEO = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <link rel="icon" type="image/x-icon" href="../images/favicon.ico"></link>
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <link
-        data-react-helmet="true"
-        rel="image_src"
-        href="/DSC02579.JPG"
-      ></link>
+      <link rel="image_src" href={seo.image} />
       <meta data-react-helmet="true" name="keywords" content=""></meta>
       {seo.url && <meta property="og:url" content={seo.url} />}
 
