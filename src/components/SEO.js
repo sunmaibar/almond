@@ -29,11 +29,7 @@ const SEO = ({ title, description, image, article }) => {
       <link rel="icon" type="image/x-icon" href="../images/favicon.ico"></link>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <link
-        data-react-helmet="true"
-        rel="image_src"
-        href="../images/products01.JPG"
-      ></link>
+      <link data-react-helmet="true" rel="image_src" href="DSC02579.JPG"></link>
       <meta data-react-helmet="true" name="keywords" content=""></meta>
       {seo.url && <meta property="og:url" content={seo.url} />}
 
