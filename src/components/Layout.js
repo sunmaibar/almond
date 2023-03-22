@@ -13,7 +13,7 @@ import { GatsbyContext } from '../context/context'
 import SEO from '../components/SEO'
 const Layout = ({ children }) => {
   const { isSidebarOpen } = useContext(GatsbyContext)
-  console.log(isSidebarOpen)
+
   return (
     <>
       <SEO />
